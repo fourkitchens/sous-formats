@@ -12,6 +12,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "drupal/entity_embed":  "^1.4"
+        "drupal/entity_embed":  "*"
     }
 }
