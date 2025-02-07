@@ -29,4 +29,5 @@ settings:
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<a hreflang alt data-entity-substitution data-entity-type data-entity-uuid title>'
-image_upload: {  }
+image_upload:
+  status: false
