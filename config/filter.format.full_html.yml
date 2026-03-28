@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_mode.media.full
   module:
     - editor
+    - linkit
     - media
 name: 'Full HTML'
 format: full_html
@@ -43,16 +44,11 @@ filters:
     status: true
     weight: 10
     settings: {  }
-  media_embed:
-    id: media_embed
-    provider: media
+  linkit:
+    id: linkit
+    provider: linkit
     status: true
-    weight: 100
+    weight: 0
     settings:
-      default_view_mode: default
-      allowed_view_modes:
-        media_library: media_library
-      allowed_media_types:
-        file: file
-        image: image
-        video: video
+      title: true
+      media_substitution: metadata
