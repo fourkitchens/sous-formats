@@ -10,8 +10,5 @@
             "role": "Maintainer"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "drupal/entity_embed":  "*"
-    }
+    "minimum-stability": "dev"
 }

@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.media.full
   module:
     - editor
-    - entity_embed
     - media
 name: 'Basic HTML'
 format: basic_html
@@ -16,12 +15,6 @@ filters:
     provider: editor
     status: false
     weight: 11
-    settings: {  }
-  entity_embed:
-    id: entity_embed
-    provider: entity_embed
-    status: true
-    weight: 100
     settings: {  }
   filter_align:
     id: filter_align
@@ -47,7 +40,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span class> <img src alt data-entity-type data-entity-uuid data-align data-caption width height> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title> <blockquote cite> <ul type> <ol type start> <drupal-media data-entity-embed-display data-entity-embed-display-settings data-embed-button data-langcode title> <a hreflang data-entity-substitution data-entity-type data-entity-uuid title class href> <strong> <em> <sub> <sup> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
+      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span class> <img src alt data-entity-type data-entity-uuid data-align data-caption width height> <drupal-entity data-entity-type data-entity-uuid data-align data-caption data-langcode alt title> <blockquote cite> <ul type> <ol type start> <drupal-media data-langcode title> <a hreflang data-entity-substitution data-entity-type data-entity-uuid title class href> <strong> <em> <sub> <sup> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_htmlcorrector:
