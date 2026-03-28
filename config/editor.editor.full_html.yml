@@ -26,6 +26,8 @@ settings:
       - '|'
       - insertTable
       - '|'
+      - style
+      - '|'
       - sourceEditing
   plugins:
     ckeditor5_heading:
@@ -39,9 +41,15 @@ settings:
       properties:
         reversed: true
         startIndex: true
+        styles: true
       multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: Button
+          element: '<a class="button-sfa">'
     media_media:
       allow_view_mode_override: false
 image_upload:
