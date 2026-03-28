@@ -10,5 +10,8 @@
             "role": "Maintainer"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/linkit": "^7.0"
+    }
 }

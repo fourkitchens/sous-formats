@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - linkit.linkit_profile.default
   module:
     - ckeditor5
+    - linkit
 format: basic_html
 editor: ckeditor5
 settings:
