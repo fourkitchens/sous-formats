@@ -8,6 +8,7 @@ dependencies:
     - media
 name: 'Basic HTML'
 format: basic_html
+editor: ckeditor5
 weight: 0
 filters:
   entity_links:
