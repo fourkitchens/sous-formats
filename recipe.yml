@@ -5,6 +5,7 @@ install:
   - ckeditor5
   - editor
   - filter
+  - linkit
   - media
 config:
   import:
