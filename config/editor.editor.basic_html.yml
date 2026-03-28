@@ -4,19 +4,12 @@ dependencies:
   config:
     - core.entity_view_mode.media.full
   module:
-    - editor
     - linkit
     - media
 name: 'Basic HTML'
 format: basic_html
 weight: 0
 filters:
-  editor_file_reference:
-    id: editor_file_reference
-    provider: editor
-    status: false
-    weight: -38
-    settings: {  }
   entity_links:
     id: entity_links
     provider: filter
