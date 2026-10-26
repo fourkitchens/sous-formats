@@ -1,6 +1,6 @@
 {
     "name": "fourkitchens/sous-formats",
-    "description": "A recipe that contains default text and date formats.",
+    "description": "A recipe that provides text and editor formats and shared Linkit defaults.",
     "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
@@ -10,8 +10,8 @@
             "role": "Maintainer"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "drupal/linkit": "^7.0"
+        "drupal/linkit": "^7.0.17"
     }
 }

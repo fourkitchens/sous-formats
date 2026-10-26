@@ -1,12 +1,9 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - core.entity_view_mode.media.full
   module:
     - editor
     - linkit
-    - media
 name: 'Full HTML'
 format: full_html
 weight: 2

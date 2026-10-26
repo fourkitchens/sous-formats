@@ -3,10 +3,13 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
-    - linkit.linkit_profile.default
   module:
     - ckeditor5
-    - linkit
+  enforced:
+    config:
+      - linkit.linkit_profile.default
+    module:
+      - linkit
 format: full_html
 editor: ckeditor5
 settings:

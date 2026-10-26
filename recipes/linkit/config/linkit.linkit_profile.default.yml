@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
 label: Default
 id: default
@@ -27,7 +28,7 @@ matchers:
         file: file
         image: image
       group_by_bundle: true
-      substitution_type: media_download
+      substitution_type: media
       limit: 20
     weight: -8
   40b16ec1-5dfd-4292-ba8f-f7b849993e92:
