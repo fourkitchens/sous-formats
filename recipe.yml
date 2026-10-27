@@ -1,15 +1,16 @@
 name: 'Sous Formats'
-description: 'A recipe that contains default text and date formats.'
+description: 'A recipe that provides text and editor formats and shared Linkit defaults.'
 type: 'Site'
+recipes:
+  # Slash-containing includes are Drupal-root relative, matching web/recipes.
+  - recipes/sous-formats/recipes/linkit
 install:
   - ckeditor5
   - editor
   - filter
-  - linkit
-  - media
 config:
-  # Allow Linkit profile defaults provided by other recipes (for example
-  # sous-admin) to differ without blocking this recipe.
+  # Editor/format defaults are strict. The shared Linkit subrecipe preserves
+  # existing project-owned profiles instead of treating them as fresh defaults.
   strict:
     - editor.editor.basic_html
     - editor.editor.full_html
@@ -21,6 +22,6 @@ config:
     - filter.format.restricted_html
   import:
     filter:
-      - filter.format.plain_text.yml
+      - filter.format.plain_text
     media:
       - core.entity_view_mode.media.full

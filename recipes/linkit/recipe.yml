@@ -1,0 +1,10 @@
+name: 'Sous Linkit Defaults'
+description: 'Shared node, media, and external link matching without editor or text-format defaults.'
+type: 'Site'
+install:
+  - linkit
+  - media
+  - node
+config:
+  # Import a missing default profile only. Site-owned customization wins.
+  strict: false
